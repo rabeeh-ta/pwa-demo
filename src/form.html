@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&family=Montserrat&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -21,22 +21,35 @@
     <nav>
         <h2>PWA DEMO APP</h2>
         <span>Offline</span>
+        <button clas><a href="../index.html">Back</a></button>
     </nav>
     <div class="container">
 
         <p>This is a Demo of a PWA app and below are some of the APIs implemented for demonstration. If you are
             interested the<a href=""> Code </a>is awaitable in Github, check it out and play around. </p>
-        <ul>
-            <li><a href="">Input Form (vibration Demo)</a></li>
-            <li><a href="">Accelerometer Gyro Demo</a></li>
-            <li><a href="">Clipboard API</a></li>
-            <li><a href="">Ambient light Sensor Api</a></li>
 
-        </ul>
+        <form>
+            <p>
+                <label>Username : </label> <input type="text" placeholder="John Doe" />
+            </p>
+            <p>
+                <label>Password : </label><input type="password" />
+            </p>
+            <p>
+                <button class="submit-btn" type="button" onclick="btnClicked()">Submit</button>
+            </p>
+        </form>
+
     </div>
 
 
     <footer>💾 rabeeh_ta</footer>
+
+    <script>
+        function btnClicked() {
+            window.navigator.vibrate(200);
+        }
+    </script>
 </body>
 
 </html>
