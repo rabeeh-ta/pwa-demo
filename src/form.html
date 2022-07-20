@@ -25,15 +25,14 @@
     </nav>
     <div class="container">
 
-        <p>This is a Demo of a PWA app and below are some of the APIs implemented for demonstration. If you are
-            interested the<a href=""> Code </a>is awaitable in Github, check it out and play around. </p>
+        <p>the username is "admin" and password is "admin". for incorrect form submission vibration feedback demo. </p>
 
         <form>
             <p>
-                <label>Username : </label> <input type="text" placeholder="John Doe" />
+                <label>Username : </label> <input id="userName" type="text" placeholder="John Doe" />
             </p>
             <p>
-                <label>Password : </label><input type="password" />
+                <label>Password : </label><input id="password" type="password" />
             </p>
             <p>
                 <button class="submit-btn" type="button" onclick="btnClicked()">Submit</button>
@@ -47,7 +46,22 @@
 
     <script>
         function btnClicked() {
-            window.navigator.vibrate([200, 100, 200, 100]);
+
+            let userName = document.getElementById('userName').value;
+
+            let password = document.getElementById('password').value;
+
+            if (userName == "admin" && password == "admin") {
+                alert("Success Full")
+            } else {
+                window.navigator.vibrate([200, 100, 200,]);
+
+            }
+
+
+
+
+
         }
     </script>
 </body>
