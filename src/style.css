@@ -1,0 +1,59 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+    text-align: center;
+    color: white;
+    background-color: #282A37;
+    height: 99vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21222C;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+
+}
+
+nav > *{
+    margin-left: 30px;
+}
+
+span{
+    color:rgb(128, 31, 31);
+    font-weight: 800;
+display: none;
+}
+
+p{
+    color: #fbf9f5;
+}
+
+.container{
+    margin:50px 15px 0 15px ;
+}
+
+.container ul{
+    margin-top: 25px;
+}
+
+.container li{
+    list-style-type: none;
+    margin: 10px;
+}
+.container a, a:focus, a:active {
+    text-decoration: none;
+    color: rgb(96, 130, 208);
+font-weight: bold;
+}
+.container a:hover {
+    text-decoration: none;
+    color: rgb(65, 93, 154);
+}
+
+footer{
+    margin-top: 150px;
+    color: rgb(99, 93, 84);
+}
